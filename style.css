@@ -1,0 +1,304 @@
+
+body {
+  --cor-fundo: #f6f8fa;
+  --cor-fundo-destaque: #e9eef3;
+  --cor-card: #ffffff;
+  --cor-texto: #1b2430;
+  --cor-texto-suave: #4a5668;
+  --cor-destaque: #0f766e;
+  --cor-texto-botao: #ffffff;
+  --cor-borda: #d3dbe4;
+  --sombra: 0 2px 8px rgba(27, 36, 48, 0.1);
+}
+
+
+body.tema-escuro {
+  --cor-fundo: #0e141b;
+  --cor-fundo-destaque: #141c26;
+  --cor-card: #1b2531;
+  --cor-texto: #e6edf3;
+  --cor-texto-suave: #a7b3c2;
+  --cor-destaque: #5eead4;
+  --cor-texto-botao: #0e141b;
+  --cor-borda: #2c3a4a;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+a {
+  color: var(--cor-destaque);
+}
+
+a:focus, button:focus {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--cor-fundo);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--cor-texto);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--cor-destaque);
+}
+
+.botao-tema {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--cor-texto);
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.botao-tema:hover {
+  border-color: var(--cor-destaque);
+}
+
+
+.secao {
+  padding: 80px 0;
+}
+
+.secao-destaque {
+  background-color: var(--cor-fundo-destaque);
+}
+
+.titulo-secao {
+  margin: 0 0 12px 0;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.subtitulo-secao {
+  margin: 0 0 32px 0;
+  max-width: 600px;
+  color: var(--cor-texto-suave);
+}
+
+
+.inicio {
+  padding: 110px 0 100px 0;
+}
+
+.nome {
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.titulo-profissional {
+  margin: 12px 0 24px 0;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 24px;
+  color: var(--cor-destaque);
+}
+
+.apresentacao {
+  max-width: 580px;
+  margin: 0 0 32px 0;
+  font-size: 20px;
+  color: var(--cor-texto-suave);
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid var(--cor-destaque);
+}
+
+.botao-principal {
+  color: var(--cor-texto-botao);
+  background-color: var(--cor-destaque);
+}
+
+.botao-secundario {
+  color: var(--cor-destaque);
+  background-color: transparent;
+}
+
+.botao:hover {
+  box-shadow: var(--sombra);
+}
+
+
+.texto-sobre {
+  max-width: 680px;
+}
+
+.texto-sobre p {
+  margin: 0 0 16px 0;
+}
+
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 24px;
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+}
+
+.card p {
+  margin: 0 0 12px 0;
+  color: var(--cor-texto-suave);
+  font-size: 16px;
+}
+
+.tecnologias {
+  font-size: 15px;
+}
+
+.links-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.link-card {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.link-contato {
+  font-size: 16px;
+  word-break: break-all;
+}
+
+
+.rodape {
+  padding: 28px 0;
+  text-align: center;
+  font-size: 15px;
+  color: var(--cor-texto-suave);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.rodape p {
+  margin: 0;
+}
+
+
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+
+  .secao {
+    padding: 56px 0;
+  }
+
+  .inicio {
+    padding: 64px 0;
+  }
+
+  .nome {
+    font-size: 42px;
+  }
+
+  .titulo-profissional {
+    font-size: 20px;
+  }
+
+  .titulo-secao {
+    font-size: 30px;
+  }
+
+  .grade {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    gap: 14px;
+  }
+}
